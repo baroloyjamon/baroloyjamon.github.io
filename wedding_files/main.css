@@ -279,6 +279,7 @@ html, body {
 }
 
 body {
+    
     background:  rgb(1, 33, 72); /* Old browsers */
 
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -303,7 +304,6 @@ background: -webkit-linear-gradient(top, rgb(116, 193, 254) 0%, rgb(167, 211, 21
  75%); /* W3C */
 
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(116, 193, 254)', endColorstr='rgb(1, 37, 82)',GradientType=0 ); /* IE6-8 */
-
 }
 
 #video_fire_works{
@@ -838,7 +838,7 @@ header {
 #rings{
     z-index:99;
     left:2%;
-    margin-top:15em;
+    margin-top:19em;
     width:333px;
     height:115px;
     background: url("../img/rings_calendar.png") no-repeat center top;
@@ -848,7 +848,7 @@ header {
 
 #rings:hover{
     z-index:99;
-    margin-top:15em;
+    margin-top:19em;
     width:333px;
     height:115px;
     background: url("../img/lord_calendar.png") no-repeat center top;
@@ -862,7 +862,7 @@ header {
     margin-top:26em;
     width:250px;
     height:286px;
-    background: url("../img/cincin.png") no-repeat center top;
+    background: url("../img/cincina.png") no-repeat center top;
     background-size: 100% 100%;
 }
 
@@ -870,7 +870,7 @@ header {
 {
     z-index:99;
     right:-2em;
-    margin-top:24em;
+    margin-top:26em;
     width:250px;
     height:286px;
     background: url("../img/cincin_hover.png") no-repeat center top;
@@ -879,7 +879,7 @@ header {
 
 #zone-where
 {
-    height:500px;
+    height:550px;
 }
 #zone-hotels p
 {
@@ -915,9 +915,12 @@ header {
     }
     #rings{
         left:0%;
+        margin-top:20em;
     }
     #rings:hover{
         left:0%;
+        margin-top:20em;
+
     }
 }
 
@@ -1048,11 +1051,11 @@ header {
         margin-top:14.5em;
     }
     #rings {
-        margin-top:17em;
+        margin-top:26em;
         left: 0%;
     }
     #rings:hover {
-        margin-top:17em;
+        margin-top:26em;
         left: 0%;
     }
     #hotels {
@@ -1064,7 +1067,7 @@ header {
         margin-top:20em;
     }
     #zone-where{
-        height:380px;
+        height:470px;
     }
     #zone-venue{
         height:540px;
@@ -1118,12 +1121,12 @@ header {
         margin-top:15em;
     }
     #rings {
-        margin-top:15em;
+        margin-top:19em;
         left: 0%;
     }
     
     #rings:hover {
-        margin-top:15em;
+        margin-top:19em;
         left: 0%;
     }
     #hotels {
@@ -1135,7 +1138,7 @@ header {
         margin-top:19em;
     }
     #zone-where{
-        height:420px;
+        height:470px;
     }
     #zone-venue{
         height:600px;
@@ -1281,4 +1284,14 @@ a:visited {
 
 .clickElement{
     cursor: pointer;
+}
+
+#loading_element{
+    background: url('../img/heart_loader@2x.png') no-repeat center center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
 }

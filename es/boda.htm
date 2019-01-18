@@ -16,6 +16,16 @@
         <script src="../wedding_files/main.js"></script>
         <script data-cfasync="false" type="text/javascript" src="../wedding_files/form-submission-handler.js"></script>
         <script type="text/javascript">
+            function hideLoader() {
+                $('#loading').hide();
+            }
+            
+            $(window).ready(hideLoader);
+            
+            // Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+            setTimeout(hideLoader, 20 * 1000);
+        </script>
+        <script type="text/javascript">
             function show()
             {
                 document.getElementById('guests').style.display="block";
@@ -68,7 +78,7 @@
         <style>
             /*Preload of images to avoid blinking when hovering over the images*/
             /*TO DO: This can be improved using sprites to reduce HTML requests*/
-            body:after{
+            :root:before {
                 content:
                 url('../img/ribbon.png')
                 url('../img/balloon_default.png')
@@ -90,6 +100,7 @@
         </style>
     </head>
     <body data-gr-c-s-loaded="true" style="">
+        <div id="loading"></div>
         <div onclick="" id="balloon" class="soaring"></div>
         <div id="language-switcher-es" class="cloud cloud-1"><a href="http://josedearcos.com/wedding/" title="English">English</a></div>
         <div id="language-switcher-it" class="cloud cloud-2"><a href="http://josedearcos.com/wedding/it/matrimonio.htm" title="Italian">Italiano</a></div>
@@ -97,7 +108,7 @@
        <div id="zone-where" class="moment first">
           &nbsp;
           <p class="scroll-hint">Sigue <br>debajo</p>
-          <p class="left"><strong>¡Ya era hora!</strong>Nos casaremos en la bella <b>Italia</b> y nos encantaría que pasarais con nosotros un día tan especial.</p>
+          <p class="left"><strong>¡Ya era hora!</strong>Después de muchos (¡muchos!) años juntos viajando, colecionando títulos, mudándonos de casa en casa y échandonos unas cuantas partidas a juegos de mesa con amigos, hemos decidido casarnos en la bella <b>Italia</b> y nos encantaría que pasarais con nosotros un día tan especial.</p>
           <div onclick="" id="rings"><a></a></div>
        </div>
        <div id="zone-venue" class="moment">
