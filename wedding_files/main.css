@@ -262,6 +262,8 @@ textarea {
   }
 
 * {
+       position: relative;
+        box-sizing: border-box;
    margin: 0px;
    padding: 0px;
 }
@@ -277,51 +279,41 @@ html, body {
 }
 
 body {
-    background: #a7d3db; /* Old browsers */
+    background:  rgb(1, 33, 72); /* Old browsers */
 
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
 
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2E3ZDNkYiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijg4JSIgc3RvcC1jb2xvcj0iI2NmZGRjOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9Ijk0JSIgc3RvcC1jb2xvcj0iI2UyZTNjZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmY2VhYmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
 
-    background: -moz-linear-gradient(top,  #a7d3db 0%, #cfddc9 88%, #e2e3ce 94%, #fceabd 100%); /* FF3.6+ */
+    background: -moz-linear-gradient(top,  rgb(116, 193, 254) 0%, rgb(167, 211, 219) 25%, lightskyblue 50%, rgb(1, 33, 72)
+ 75%); /* FF3.6+ */
 
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a7d3db), color-stop(88%,#cfddc9), color-stop(94%,#e2e3ce), color-stop(100%,#fceabd)); /* Chrome,Safari4+ */
+ background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(116, 193, 254)), color-stop(25%,rgb(167, 211, 219)), color-stop(50%,lightskyblue), color-stop(75%,rgb(1, 33, 72))); /* Chrome,Safari4+ */
 
-    background: -webkit-linear-gradient(top,  #a7d3db 0%,#cfddc9 88%,#e2e3ce 94%,#fceabd 100%); /* Chrome10+,Safari5.1+ */
+background: -webkit-linear-gradient(top, rgb(116, 193, 254) 0%, rgb(167, 211, 219) 25%, lightskyblue 50%, rgb(1, 33, 72)
+ 75%); /* Chrome10+,Safari5.1+ */
 
-    background: -o-linear-gradient(top,  #a7d3db 0%,#cfddc9 88%,#e2e3ce 94%,#fceabd 100%); /* Opera 11.10+ */
+ background: -o-linear-gradient(top,  rgb(116, 193, 254) 0%, rgb(167, 211, 219) 25%, lightskyblue 50%, rgb(1, 33, 72)
+ 75%); /* Opera 11.10+ */
 
-    background: -ms-linear-gradient(top,  #a7d3db 0%,#cfddc9 88%,#e2e3ce 94%,#fceabd 100%); /* IE10+ */
+ background: -ms-linear-gradient(top,  rgb(116, 193, 254) 0%, rgb(167, 211, 219) 25%, lightskyblue 50%, rgb(1, 33, 72)
+ 75%); /* IE10+ */
 
-   background: linear-gradient(to bottom, #74c1fe 0%, #a7d3db 25%, lightskyblue 50%, #002751 75%); /* W3C */
+ background: linear-gradient(to bottom, rgb(116, 193, 254) 0%, rgb(167, 211, 219) 25%, lightskyblue 50%, rgb(1, 33, 72)
+ 75%); /* W3C */
 
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7d3db', endColorstr='#fceabd',GradientType=0 ); /* IE6-8 */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(116, 193, 254)', endColorstr='rgb(1, 37, 82)',GradientType=0 ); /* IE6-8 */
 
 }
 
-footer {
-    position: relative;
-    height: 378px;
-    background: url('../img/ground.png') center no-repeat;
-    z-index: 0;
-}
-
-footer p {
+#video_fire_works{
+    z-index: 1;
     position: absolute;
-    left: 50%;
-    margin-left: 350px;
-    color: #677435;
-    font-size: 0.8em
+    width: 100%;
+    height: auto;
+    border: none !important;
+    top: -2px;
 }
-
-footer p a, footer p a:active, footer p a:visited, footer p a:hover {
-    color: #677435;
-}
-
-footer p a:hover {
-    text-decoration: none;
-}
-
 
 #language-switcher-it {
     position: absolute;
@@ -373,13 +365,14 @@ footer p a:hover {
 }
 
 #balloon {
+    margin-top: -140px;
     position: fixed;
     left: 50%;
     margin-left: -304px;
     width: 609px;
     height: 940px;
-    background: url('../img/balloon_default@2x.png') no-repeat center top;
-    z-index: 99;
+    background: url('../img/balloon_default.png') no-repeat center top;
+    z-index: 98;
     background-size: 544px 840px;
 }
 
@@ -389,7 +382,7 @@ footer p a:hover {
     margin-left: -304px;
     width: 609px;
     height: 940px;
-    background: url('../img/balloon_smiling@2x.png') no-repeat center top;
+    background: url('../img/balloon_smiling.png') no-repeat center top;
     z-index: 99;
     background-size: 544px 840px;
 }
@@ -398,11 +391,12 @@ header {
     top: 110px;
     position: relative;
     height: 255px;
-    background: url('../img/ribbon.png') center no-repeat;
+    background: center no-repeat;
+    background-size: 1079px 245px;
     z-index: 100;
 }
 
-header #ribbon {
+#ribbon {
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -410,103 +404,19 @@ header #ribbon {
     padding-left: 30px;
     padding-right: 30px;
     height: 100%;
+    background: center no-repeat;url('../img/ribbon.png');
 }
 
-header div {
-    position: absolute;
-    text-shadow: 0px 1px 0px #ffffff;
-}
-
-header .title {
-    font-family: "Sreda", "Georgia", "Times New Roman", serif;
-    font-size: 3.7em;
-    color: #8E6454;
-    top: 45px;
-
-}
-
-header .subtitle {
-    font-family: "Georgia", serif;
-    font-size: 2.2em;
-    color: #9B7664;
-    top: 130px;
-
-}
-
-header .date {
-    left: 110px;
-}
-
-header .year {
-    right: 120px;
-}
-
-header .bride {
-    left: 385px;
-    -webkit-transform: rotate(353deg);
-    -moz-transform: rotate(353deg);
-    -o-transform: rotate(353deg);
-    transform: rotate(353deg);
-    writing-mode: lr-tb;
-}
-
-header .groom {
-    right: 0px;
-    margin-right: 400px;
-    -webkit-transform: rotate(7deg);
-    -moz-transform: rotate(7deg);
-    -o-transform: rotate(7deg);
-    transform: rotate(7deg);
-    writing-mode: lr-tb;
-}
-
-header span {
-
-}
-
-header span.left {
-
-}
-
-header span.right {
-
-}
-
-nav {
-    position: fixed;
-    bottom: 0px;
-    right: 50px;
-    z-index: 1000;
-}
-
-nav ul {
+#ribbonit {
     position: relative;
-    list-style: none;
-}
-
-nav ul li {
-    background: 0px 0px url('../img/hearts.png') no-repeat;
-    line-height: 0.7em;
-    margin-bottom: 32px;
-    height: 18px;
-    width: 18px;
-}
-
-nav ul li a {
-    display: none;
-    position: absolute;
-    right: 40px;
-    color: #F26A47;
-    text-decoration: none
-}
-
-nav ul li.selected {
-    background-position: 0px -18px;
-}
-
-html.no-touch nav ul li:hover {
-    cursor: pointer;
-    background-position: 0px -18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 100%;
+    background: url('../img/ribbonit.png') center no-repeat;
+    background-size: 1079px 245px;
 }
 
 .moment {
@@ -514,8 +424,8 @@ html.no-touch nav ul li:hover {
     width: 90%;
     margin-left: 5%;
     margin-right: -5%;
-    height: 800px;
-    font-size: 1.3em;
+    height: 750px;
+    font-size: 1.4em;
 }
 
 .moment p {
@@ -529,8 +439,8 @@ html.no-touch nav ul li:hover {
 .moment p.scroll-hint {
     color: #FAFDFC;
     font-family: "Sreda", "Georgia", "Times New Roman", serif;
-    font-size: 1.3em;
-    background: url('../img/arrow.png') right 0px no-repeat;
+    font-size: 1.2em;
+    background: url('../img/arrow.png') right no-repeat;
     padding-right: 2px;
     width: 100px;
     animation: drumming-up 0.8s linear infinite;
@@ -548,7 +458,7 @@ html.no-touch nav ul li:hover {
     font-family: "Sreda", "Georgia", "Times New Roman", serif;
     margin-top: 150px;
     margin-bottom: 13px;
-    font-size: 1.5em;
+    font-size: 1.6em;
     line-height: 1em;
     font-weight: 300;
     display: block;
@@ -556,27 +466,16 @@ html.no-touch nav ul li:hover {
 }
 
 .moment h2 strong {
-    font-size: 1.5em;
+    font-size: 1.4em;
     line-height: 1em;
     font-weight: 300;
-    margin-left:1.4em;
+    margin-left:1.7em;
     display: block;
     color: #F26A47;
 }
 
 .moment p.right {
-    /*right: 50px;*/
     right: 0%;
-}
-
-@media screen and (max-width: 531px) {
-    .moment p.right {
-        /*right: 50px;*/
-        left: 0%;
-    }
-}
-
-.moment p.left {
 }
 
 .moment.first {
@@ -586,11 +485,9 @@ html.no-touch nav ul li:hover {
 .moment.last {
     position: relative;
     margin-left: 5%;
-    font-size: 1em;
-    z-index:100;
+    font-size: 1.1em;
+    z-index:99;
     width:30%;
-    margin-bottom: 250px;
-
 }
 
 .moment.last strong{
@@ -706,43 +603,7 @@ html.no-touch nav ul li:hover {
     z-index: 30;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
 
-  .moment p.scroll-hint {
-    background-image: url('../img/arrow@2x.png');
-    background-size: 17px 29px;
-  }
-
-  #balloon {
-    background-image: url('../img/balloon_default@2x.png');
-    background-size: 544px 840px;
-  }
-
-  #bird {
-    background-image: url('../img/bird@2x.png');
-    background-size: 48px 32px;
-  }
-  
-  .cloud {
-    background-image: url('../img/clouds@2x.png');
-    background-size: 308px 446px;
-  }
-
-  footer {
-    background-image: url('../img/ground@2x.png');
-    background-size: 3028px 378px;
-  }
-
-  nav ul li {
-    background-image: url('../img/hearts@2x.png');
-    background-size: 20px 36px;
-  }
-
-  header {
-    background-image: url('../img/ribbon@2x.png');
-    background-size: 1079px 245px;
-  }
-}
 
 /* ==========================================================================
    Helper classes
@@ -805,17 +666,6 @@ html.no-touch nav ul li:hover {
     position: static;
     width: auto;
 }
-
-
-#zone-hotels p
-{
-    color:white;
-}
-#zone-form
-{
-    color:white;
-}
-
 
 /*
  * Hide visually and from screenreaders, but maintain layout
@@ -946,6 +796,489 @@ html.no-touch nav ul li:hover {
 }
 
 #hotels{
-    margin-top:1em;
-    right:0.5em;
+    z-index:99;
+    margin-top:19em;
+    left:73%;
+    width:333px;
+    height:270px;
+    background: url("../img/accomodation.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+#hotels:hover{
+    z-index:99;
+    margin-top:19em;
+    left:73%;
+    width:333px;
+    height:270px;
+    background: url("../img/accomodation_hover.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+#bigday{
+    z-index:99;
+    margin-top:15em;
+    left:73%;
+    width:333px;
+    height:320px;
+    background: url("../img/thebigday_default.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+#bigday:hover{
+    z-index:99;
+    margin-top:15em;
+    left:73%;
+    width:333px;
+    height:320px;
+    background: url("../img/thebigday_hover.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+#rings{
+    z-index:99;
+    left:2%;
+    margin-top:15em;
+    width:333px;
+    height:115px;
+    background: url("../img/rings_calendar.png") no-repeat center top;
+    background-size: 100% 100%;
+
+}
+
+#rings:hover{
+    z-index:99;
+    margin-top:15em;
+    width:333px;
+    height:115px;
+    background: url("../img/lord_calendar.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+#cincin
+{
+    z-index:99;
+    right:-2em;
+    margin-top:26em;
+    width:250px;
+    height:286px;
+    background: url("../img/cincin.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+#cincin:hover
+{
+    z-index:99;
+    right:-2em;
+    margin-top:24em;
+    width:250px;
+    height:286px;
+    background: url("../img/cincin_hover.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+#zone-where
+{
+    height:500px;
+}
+#zone-hotels p
+{
+    color:white;
+}
+#zone-form
+{
+    color:white;
+}
+
+#zone-eventi i{
+    padding-left:0.5em;
+}
+#zone-eventi b{
+    padding-left:0.5em;
+}
+
+/*Normal laptops*/
+@media only screen and (max-device-width:1280px){
+    #hotels{
+        margin-top:21em;
+    }
+    #hotels:hover{
+        margin-top:21em;
+    }
+    #cincin{
+        margin-top:28em;
+        left:5%;
+    }
+    #cincin:hover{
+        margin-top:28em;
+        left:5%;
+    }
+    #rings{
+        left:0%;
+    }
+    #rings:hover{
+        left:0%;
+    }
+}
+
+/*Retina*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    
+    #video_fire_works{
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        border: none !important;
+        top: -10em;
+    }
+    
+    .moment p.scroll-hint {
+        background-image: url('../img/arrow@2x.png');
+        background-size: 17px 29px;
+    }
+    
+    .footer_static{
+        background: url('../img/newground_orange_footer@2x.png') no-repeat center top;
+        background-size: 100%;
+    }
+   
+    footer{
+        background: url('../img/newground_orange@2x.png') no-repeat center top;
+        background-size: 100% 700px;
+    }
+    #balloon {
+        background-image: url('../img/balloon_default@2x.png');
+        background-size: 544px 840px;
+    }
+    
+    #balloon:hover {
+        background: url('../img/balloon_smiling@2x.png') no-repeat center top;
+        background-size: 544px 840px;
+    }
+    
+    #bird {
+        background-image: url('../img/bird@2x.png');
+        background-size: 48px 32px;
+    }
+    
+    .cloud {
+        background-image: url('../img/clouds@2x.png');
+        background-size: 308px 446px;
+    }
+    
+    
+    nav ul li {
+        background-image: url('../img/hearts@2x.png');
+        background-size: 20px 36px;
+    }
+    
+    header {
+        background-image: url('../img/ribbon@2x.png');
+        background-size: 1079px 245px;
+    }
+    
+    #ribbonit{
+        background-image: url('../img/ribbonit@2x.png');
+        background-size: 1079px 245px;
+    }
+    
+    #cincin
+    {
+        background: url("../img/cincin@2x.png") no-repeat center top;
+        background-size: 100% 100%;
+    }
+    
+    #cincin:hover
+    {
+        background: url("../img/cincin_hover@2x.png") no-repeat center top;
+        background-size: 100% 100%;
+    }
+    
+    #rings
+    {
+        background: url("../img/rings_calendar@2x.png") no-repeat center top;
+        background-size: 100% 100%;
+    }
+    
+    #rings:hover
+    {
+        background: url("../img/lord_calendar@2x.png") no-repeat center top;
+        background-size: 100% 100%;
+    }
+    
+    #bigday{
+        background: url("../img/thebigday_default@2x.png") no-repeat center top;
+        background-size: 100% 100%;
+    }
+    
+    #bigday:hover{
+        background: url("../img/thebigday_hover@2x.png") no-repeat center top;
+        background-size: 100% 100%;
+    }
+
+    #hotels{
+        background: url("../img/accomodation@2x.png") no-repeat center top;
+        background-size: 100% 100%;
+    }
+    
+    #hotels:hover{
+        background: url("../img/accomodation_hover@2x.png") no-repeat center top;
+        background-size: 100% 100%;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (orientation:portrait) {
+    .moment p.left
+    {
+        width:40%;
+    }
+    .moment p.right {
+        width:40%;
+        left: 0%;
+    }
+    
+    #bigday {
+        left: 0%;
+        margin-top:14.5em;
+    }
+    #bigday:hover {
+        left: 0%;
+        margin-top:14.5em;
+    }
+    #rings {
+        margin-top:17em;
+        left: 0%;
+    }
+    #rings:hover {
+        margin-top:17em;
+        left: 0%;
+    }
+    #hotels {
+        left: 0%;
+        margin-top:20em;
+    }
+    #hotels:hover {
+        left: 0%;
+        margin-top:20em;
+    }
+    #zone-where{
+        height:380px;
+    }
+    #zone-venue{
+        height:540px;
+    }
+    #zone-eventi{
+        height:640px;
+    }
+    #zone-hotels{
+        height:760px;
+    }
+    #zone-form{
+        height:400px;
+    }
+    .moment.last{
+        height:800px;
+    }
+    #cincin{
+        left:10%;
+        margin-top:25em;
+    }
+    #cincin:hover{
+        left:10%;
+        margin-top:25em;
+    }
+}
+
+
+/*Phones*/
+@media only screen and (orientation:portrait) {
+    
+    .moment.last
+    {
+        margin-bottom: 30em;
+    }
+
+    .moment p.left
+    {
+        width:40%;
+    }
+    .moment p.right {
+        width:40%;
+        left: 0%;
+    }
+    
+    #bigday {
+        left: 0%;
+        margin-top:15em;
+    }
+    #bigday:hover {
+        left: 0%;
+        margin-top:15em;
+    }
+    #rings {
+        margin-top:15em;
+        left: 0%;
+    }
+    
+    #rings:hover {
+        margin-top:15em;
+        left: 0%;
+    }
+    #hotels {
+        left: 0%;
+        margin-top:19em;
+    }
+    #hotels:hover {
+        left: 0%;
+        margin-top:19em;
+    }
+    #zone-where{
+        height:420px;
+    }
+    #zone-venue{
+        height:600px;
+    }
+    #zone-eventi{
+        height:760px;
+    }
+    #zone-hotels{
+        height:810px;
+    }
+    #zone-form{
+        height:400px;
+    }
+    #cincin{
+        left:6%;
+        margin-top:25em;
+    }
+    #cincin:hover{
+        left:6%;
+        margin-top:25em;
+    }
+}
+
+
+/*Large 4K*/
+@media (min-width: 2000px) {
+    #bigday {
+        left: 78%;
+    }
+    #bigday:hover{
+        left: 78%;
+    }
+    #hotels {
+        left: 78%;
+    }
+    #hotels:hover {
+        left: 78%;
+    }
+    #cincin
+    {
+        left: 7%;
+    }
+    #cincin:hover
+    {
+        left: 7%;
+    }
+    #rings {
+        left: 7%;
+    }
+    #rings:hover {
+        left: 7%;
+    }
+}
+
+@media only screen and (orientation:landscape) and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    .moment p.left
+    {
+        width:30%;
+    }
+    .moment p.right {
+        width:30%;
+    }
+    #bigday {
+        left: 66%;
+        margin-top:16em;
+    }
+    #bigday:hover {
+        left: 66%;
+        margin-top:16em;
+    }
+    #hotels {
+        left: 66%;
+        margin-top:20em;
+    }
+    #hotels:hover {
+        left: 66%;
+        margin-top:20em;
+    }
+    #balloon{
+        width: 609px;
+        height: 940px;
+        background-size: 380px 587px;
+    }
+    #balloon:hover{
+        width: 609px;
+        height: 940px;
+        background-size: 380px 587px;
+    }
+}
+
+/*landscape phones*/
+@media only screen and (orientation:landscape) and  (max-device-height : 600px) {
+    #bigday {
+        left: 67%;
+        margin-top:16em;
+    }
+    #bigday:hover {
+        left: 67%;
+        margin-top:16em;
+    }
+    #hotels {
+        left: 66%;
+    }
+    #hotels:hover {
+        left: 66%;
+    }
+    #cincin
+    {
+        left: 0%;
+        margin-top:26em;
+    }
+    #cincin:hover
+    {
+        left: 0%;
+        margin-top:26em;
+    }
+}
+
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.poster
+{
+    position:absolute;
+    z-index:-1;
+    width: 100%;
+    height: auto;
+    border: none !important;
+    top: -2px;
+}
+
+/* For iPad*/
+
+.clickElement{
+    cursor: pointer;
 }
