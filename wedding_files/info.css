@@ -522,6 +522,10 @@ p.left
     }
 }
 
+#map
+{
+    left:28%;
+}
 #zone-hotels{
     position:relative;
     margin-top:-2em;
@@ -568,69 +572,32 @@ p.left
 
 /* iPads (portrait) ----------- */
 @media only screen and (orientation:portrait) {
-    .moment p.left
-    {
-    }
-    .moment p.right {
-        left: 0%;
-    }
-    #hotels {
-    }
-    #hotels:hover {
-    }
+    
 }
 
 
 /*Phones*/
 @media only screen and (orientation:portrait) {
+    #map
+    {
+        left:10%;
+    }
     
-    #language-switcher-es {
-        margin-left: 12%;
+    .container li{
+        width:100%;
     }
-    #language-switcher-it {
-        margin-left: 2%;
-    }
-    .moment.last
-    {
-        margin-bottom: 30em;
-    }
-    .moment p.left
-    {
-        position:relative;
-    }
-    .moment p.right {
-        width:40%;
-        left: 0%;
-    }
-    #hotels {
-    }
-    #hotels:hover {
-    }
+
 }
 
 
 /*Large 4K*/
 @media (min-width: 2000px) {
-    #hotels {
-    }
-    #hotels:hover {
-    }
+
 }
 
 @media only screen and (orientation:landscape) and (min-device-width : 768px)
 and (max-device-width : 1024px) {
-    .moment p.left
-    {
-        position:relative;
-    }
-    .moment p.right {
-    }
-    #hotels {
-    }
-    #hotels:hover {
-    }
-    #balloon{
-    }
+
 }
 
 .container{
@@ -639,10 +606,6 @@ and (max-device-width : 1024px) {
 }
 /*landscape phones*/
 @media only screen and (orientation:landscape) and  (max-device-height : 600px) {
-    #hotels {
-    }
-    #hotels:hover {
-    }
 }
 
 a:link {
