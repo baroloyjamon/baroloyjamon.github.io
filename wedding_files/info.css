@@ -1,0 +1,698 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+@font-face {
+    font-family: 'Hamilton';
+    src: url('../fonts/Hamilton.ttf') format('truetype');
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    overflow-x: initial !important;
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.99em;
+    width:100%;
+}
+
+* {
+       position: relative;
+        box-sizing: border-box;
+   margin: 0px;
+   padding: 0px;
+}
+
+html, body {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    min-width: 1024px;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+body {
+    background:  rgb(116, 193, 254); /* Old browsers */
+}
+
+/*
+$black: #202020;
+$white: #fff;
+$dark-grey: #808080;
+$light-grey: #d9d9d9;
+$purple: #B97CFC;
+$pink: #F93B69;
+$green: #B0E8E2;
+$orange: #EB8B6E;
+
+.container {
+    max-width: 350px;
+    max-height: 630px;
+    overflow: hidden;
+    margin: 30px auto 0;
+    box-shadow: 0 0 40px #a0a0a0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    background: url(../img/torino.png);
+    background-size: cover;
+    color: #fff;
+    position: relative;
+}
+
+.color-overlay {
+    padding: 10em 2em;
+    box-sizing: border-box;
+}
+
+.day-number {
+    font-size: 4em;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.date-right {
+    display: inline-block;
+}
+
+.day-name {
+    font-size: 1.6em;
+}
+
+.month {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 0.6em;
+    letter-spacing: 2px;
+    margin-top: 2px;
+}
+
+.timeline ul {
+    padding: 1em 0 0 2em;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+.timeline ul::before {
+    content: ' ';
+    height: 100%;
+    width: 1px;
+    background-color: #d9d9d9;
+    position: absolute;
+    top: 0;
+    left: 2.5em;
+    z-index: -1;
+}
+.timeline li div {
+    display: inline-block;
+    margin: 1em 0;
+    vertical-align: top;
+}
+.timeline .bullet {
+    width: 1em;
+    height: 1em;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 1;
+    margin-right: 1em;
+}
+.timeline .bullet.pink {
+    border: 2px solid #F93B69;
+}
+.timeline .bullet.green {
+    border: 2px solid #B0E8E2;
+}
+.timeline .bullet.orange {
+    border: 2px solid #EB8B6E;
+}
+.timeline .time {
+    width: 20%;
+    font-size: 0.75em;
+    padding-top: 0.25em;
+}
+.timeline .desc {
+    width: 50%;
+}
+.timeline h3 {
+    font-size: 0.9em;
+    font-weight: 400;
+    margin: 0;
+}
+.timeline h4 {
+    margin: 0;
+    font-size: 0.7em;
+    font-weight: 400;
+    color: #808080;
+}
+
+*/
+#language-switcher-it {
+    position: absolute;
+    top: 65px;
+    margin-left: 83%;
+    left:0;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 25px;
+    height: 60px;
+    z-index:1;
+}
+
+#language-switcher-it a, #language-switcher-it a:visited, #language-switcher-it a:active {
+    color: #A3A5A5;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 0 10px;
+    top:5px;
+}
+
+#language-switcher-it a:hover {
+    color: #83CFCB;
+}
+
+#language-switcher-es {
+    position: absolute;
+    top: 60px;
+    margin-left: 75%;
+    left:0;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 25px;
+    height: 60px;
+    z-index:2;
+}
+
+#language-switcher-es a, #language-switcher-es a:visited, #language-switcher-es a:active {
+    color: #A3A5A5;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+#language-switcher-es a:hover {
+    color: #83CFCB;
+}
+
+.sticky-wrapper {
+    position: relative;
+}
+
+#balloon {
+    margin-top: 20px;
+    position: fixed;
+    left: 10%;
+    margin-left: -304px;
+    width: 609px;
+    height: 940px;
+    background: url('../img/balloon_default.png') no-repeat center top;
+    z-index: 98;
+    background-size: 544px 840px;
+}
+
+#balloon:hover {
+    position: fixed;
+    left: 10%;
+    margin-left: -304px;
+    width: 609px;
+    height: 940px;
+    background: url('../img/balloon_smiling.png') no-repeat center top;
+    z-index: 99;
+    background-size: 544px 840px;
+}
+
+.moment {
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: -5%;
+    font-size: 1.4em;
+}
+
+.city{
+    font-family: "Hamilton", serif;
+    position: relative;
+    width: 70%;
+    top: 0%;
+    left:3%;
+    z-index: 10;
+    margin-top:35px;
+    color: white;
+    font-size:3em;
+}
+
+#hotel{
+    font-family: "Hamilton", serif;
+ /*   font-family: "Sreda", "Georgia", "Times New Roman", serif;*/
+    font-size: 2em;
+    color:white;
+    left:10%;
+    margin-top:1.5em;
+    margin-bottom:-0.1em;
+    
+}
+
+.moment p {
+    position: relative;
+    width: 74%;
+    top: 0%;
+    left:15%;
+    z-index: 10;
+    color: white;
+    font-size:1em;
+    
+}
+
+.moment p.scroll-hint {
+    color: #FAFDFC;
+    font-family: "Sreda", "Georgia", "Times New Roman", serif;
+    font-size: 1.2em;
+    background: url('../img/arrow.png') right no-repeat;
+    padding-right: 2px;
+    width: 100px;
+    animation: drumming-up 0.8s linear infinite;
+    -o-animation: drumming-up 0.8s linear infinite;
+    -webkit-animation: drumming-up 0.8s linear infinite;
+    -moz-animation: drumming-up 0.8s linear infinite;
+}
+
+.moment p strong {
+    font-family: "Sreda", "Georgia", "Times New Roman", serif;
+    margin-top: 150px;
+    margin-bottom: 13px;
+    font-size: 1.6em;
+    line-height: 1em;
+    font-weight: 300;
+    display: block;
+    color: #f28119;
+}
+
+.moment h2 strong {
+    font-size: 1.4em;
+    line-height: 1em;
+    font-weight: 300;
+    margin-left:1.7em;
+    display: block;
+}
+
+
+.moment h2 {
+   /* font-family: 'Hamilton', sans-serif;*/
+    font-family: "Sreda", "Georgia", "Times New Roman", serif;
+    font-size: 1.35em;
+    line-height: 1em;
+    font-weight: 300;
+    margin-left:1.7em;
+    color: white;
+    left:11.5%;
+}
+
+
+.moment ul{
+    color:white;
+}
+
+.moment li{
+    color:white;
+    left:16%;
+    width:100%;
+}
+
+.container li{
+    color:white;
+    left:0%;
+    width:138%;
+}
+.moment ul ul li{
+    color:white;
+    left:22%;
+}
+
+.moment ul ul{
+    left:5%;
+}
+
+.moment p.right {
+    position: relative;
+    left: 72%;
+}
+
+.moment.first {
+    margin-top: 0em;
+}
+
+
+.moment.first p {
+    text-align:center;
+    font-size:2em;
+    width:auto;
+}
+
+p.left
+{
+    position:relative;
+    width:70%;
+}
+
+.moment.last {
+    position: relative;
+    margin-left: 5%;
+    font-size: 1.1em;
+    z-index:99;
+    width:30%;
+}
+
+.moment.last strong{
+    color: #f28119;
+}
+
+.form_center{
+    width:100%;
+}
+
+#form_center{
+    width:100%;
+}
+
+#message
+{
+    margin-top:220px;
+}
+
+.cloud {
+    left: 50%;
+    position: absolute;
+    z-index: 0;
+    background-image: url('../img/clouds.png');
+    background-repeat: no-repeat;
+}
+
+.cloud-1 {
+    width: 143px;
+    height: 57px;
+    background-position: 0px 0px;
+}
+
+.cloud-2 {
+    width: 156px;
+    height: 64px;
+    background-position: 0px -57px;
+}
+
+.cloud-3 {
+    width: 308px;
+    height: 87px;
+    background-position: 0px -121px;
+}
+
+.cloud-4 {
+    width: 206px;
+    height: 81px;
+    background-position: 0px -208px;
+}
+
+.cloud-5 {
+    width: 188px;
+    height: 76px;
+    background-position: 0px -289px;
+}
+
+.cloud-6 {
+    width: 206px;
+    height: 81px;
+    background-position: 0px -365px;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+#zone-hotels{
+    position:relative;
+    margin-top:-2em;
+}
+#zone-hotels p
+{
+    color:white;
+}
+#zone-form{
+    color:white;
+    height:40em;
+    position:relative;
+}
+
+#hotels{
+    position:relative;
+    text-align:center;
+    z-index:99;
+    margin-top:0em;
+    display: block; margin: 0 auto;
+    width:572px;
+    height:201px;
+    background: url("../img/where_to_stay.png") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+/*Normal laptops*/
+@media only screen and (max-device-width:1280px){
+}
+
+/*Retina*/
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+    
+    #balloon {
+        background-image: url('../img/balloon_default@2x.png');
+        background-size: 277px 420px;
+    }
+    
+    #balloon:hover {
+        background: url('../img/balloon_smiling@2x.png') no-repeat center top;
+        background-size: 277px 420px;
+    }
+
+    #hotels{
+        background: url("../img/where_to_stay@2x.png") no-repeat center top;
+        background-size: 100% 100%;
+    }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (orientation:portrait) {
+    .moment p.left
+    {
+    }
+    .moment p.right {
+        left: 0%;
+    }
+    #hotels {
+    }
+    #hotels:hover {
+    }
+}
+
+
+/*Phones*/
+@media only screen and (orientation:portrait) {
+    
+    #language-switcher-es {
+        margin-left: 12%;
+    }
+    #language-switcher-it {
+        margin-left: 2%;
+    }
+    .moment.last
+    {
+        margin-bottom: 30em;
+    }
+    .moment p.left
+    {
+        position:relative;
+    }
+    .moment p.right {
+        width:40%;
+        left: 0%;
+    }
+    #hotels {
+    }
+    #hotels:hover {
+    }
+}
+
+
+/*Large 4K*/
+@media (min-width: 2000px) {
+    #hotels {
+    }
+    #hotels:hover {
+    }
+}
+
+@media only screen and (orientation:landscape) and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    .moment p.left
+    {
+        position:relative;
+    }
+    .moment p.right {
+    }
+    #hotels {
+    }
+    #hotels:hover {
+    }
+    #balloon{
+        width: 609px;
+        height: 940px;
+        background-size: 380px 587px;
+    }
+    #balloon:hover{
+        width: 609px;
+        height: 940px;
+        background-size: 380px 587px;
+    }
+}
+
+.container{
+    left:5%;
+    width:70%;
+}
+/*landscape phones*/
+@media only screen and (orientation:landscape) and  (max-device-height : 600px) {
+    #hotels {
+    }
+    #hotels:hover {
+    }
+}
+
+a:link {
+    color: #f28119;
+    background-color: transparent;
+}
+
+a:visited {
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.poster
+{
+    position:absolute;
+    z-index:-1;
+    width: 100%;
+    height: auto;
+    border: none !important;
+    top: -2px;
+}
+
+/* For iPad*/
+
+.clickElement{
+    cursor: pointer;
+}
