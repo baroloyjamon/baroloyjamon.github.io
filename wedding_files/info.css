@@ -325,7 +325,7 @@ $orange: #EB8B6E;
 .moment li{
     color:white;
     left:16%;
-    width:100%;
+    width:75%;
 }
 
 .container li{
@@ -582,9 +582,14 @@ p.left
     {
         left:10%;
     }
+    #gmap
+    {
+        left:-10%;
+    }
+    
     
     .container li{
-        width:100%;
+        width:138%;
     }
 
 }
