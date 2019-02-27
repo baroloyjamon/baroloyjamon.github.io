@@ -264,14 +264,11 @@ $orange: #EB8B6E;
 
 .moment p {
     position: relative;
-    width: 80%;
     top: 0%;
     left:15%;
-    max-width:80%;
-    z-index: 10;
+    max-width:85%;
     color: white;
     font-size:1em;
-    
 }
 
 .moment p strong {
@@ -303,6 +300,7 @@ $orange: #EB8B6E;
     margin-left:3.5%;
     color: white;
     left:11.5%;
+    width:40%;
 }
 
 
@@ -315,7 +313,7 @@ $orange: #EB8B6E;
 }
 
 .moment ul li{
-    left: 22%;
+    left: 18%;
     width:85%;
 }
 
@@ -441,18 +439,24 @@ $orange: #EB8B6E;
 
 #map
 {
-    border:1px solid #021a40;
     margin-top:1em;
     margin-bottom:1em;
-    left:28%;
+    border:1px solid #021a40;
+    width: 800px;
+    height: 600px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 #gmap
 {
-    width: 50%;
-    margin:auto;
     margin-top:2em;
     margin-bottom:2em;
-    left:-2%;
+    width: 800px;
+    height: 400px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 #zone-hotels{
     position:relative;
@@ -501,14 +505,6 @@ $orange: #EB8B6E;
 
 /*Phones*/
 @media only screen and (orientation:portrait) {
-    #map
-    {
-        left:4%;
-    }
-    #gmap
-    {
-        left:-14%;
-    }
 }
 
 
