@@ -266,7 +266,7 @@ $orange: #EB8B6E;
     position: relative;
     top: 0%;
     left:15%;
-    max-width:85%;
+    max-width:80%;
     color: white;
     font-size:1em;
 }
@@ -303,25 +303,29 @@ $orange: #EB8B6E;
     width:40%;
 }
 
-
 .moment ul{
     color:white;
 }
 
-.moment li{
-    left:16%;
-}
-
 .moment ul li{
-    left: 18%;
-    width:85%;
+    left: 17%;
+    width:80%;
 }
 
 #hotelli
 {
-    left:5%;
+    left:1%;
+    width:99%;
 }
 
+.date
+{
+    left:3%;
+}
+
+.extra{
+    margin-bottom:0.5em;
+}
 
 .moment.first p {
     text-align:center;
