@@ -311,24 +311,19 @@ $orange: #EB8B6E;
 }
 
 .moment li{
-    color:white;
     left:16%;
-    width:75%;
 }
 
-.container li{
-    color:white;
-    left:0%;
-    width:138%;
-}
-.moment ul ul li{
-    color:white;
-    left:22%;
+.moment ul li{
+    left: 22%;
+    width:85%;
 }
 
-.moment ul ul{
+#hotelli
+{
     left:5%;
 }
+
 
 .moment.first p {
     text-align:center;
@@ -446,10 +441,17 @@ $orange: #EB8B6E;
 
 #map
 {
+    border:1px solid #021a40;
+    margin-top:1em;
+    margin-bottom:1em;
     left:28%;
 }
 #gmap
 {
+    width: 50%;
+    margin:auto;
+    margin-top:2em;
+    margin-bottom:2em;
     left:-2%;
 }
 #zone-hotels{
@@ -501,18 +503,12 @@ $orange: #EB8B6E;
 @media only screen and (orientation:portrait) {
     #map
     {
-        left:10%;
+        left:4%;
     }
     #gmap
     {
-        left:-18%;
+        left:-14%;
     }
-    
-    
-    .container li{
-        width:138%;
-    }
-
 }
 
 
@@ -526,10 +522,6 @@ and (max-device-width : 1024px) {
 
 }
 
-.container{
-    left:5%;
-    width:70%;
-}
 /*landscape phones*/
 @media only screen and (orientation:landscape) and  (max-device-height : 600px) {
 }
