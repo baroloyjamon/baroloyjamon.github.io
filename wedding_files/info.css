@@ -221,26 +221,14 @@ $orange: #EB8B6E;
 }
 
 #balloon {
-    margin-top: 20px;
-    position: fixed;
-    left: 10%;
-    margin-left: -304px;
-    width: 609px;
-    height: 940px;
+    margin-top: 10px;
+    position: absolute;
+    left: 5%;
+    width: 136px;
+    height: 210px;
     background: url('../img/balloon_default.png') no-repeat center top;
     z-index: 98;
-    background-size: 544px 840px;
-}
-
-#balloon:hover {
-    position: fixed;
-    left: 10%;
-    margin-left: -304px;
-    width: 609px;
-    height: 940px;
-    background: url('../img/balloon_smiling.png') no-repeat center top;
-    z-index: 99;
-    background-size: 544px 840px;
+    background-size: 96px 150px;
 }
 
 .moment {
@@ -569,12 +557,7 @@ p.left
     
     #balloon {
         background-image: url('../img/balloon_default@2x.png');
-        background-size: 277px 420px;
-    }
-    
-    #balloon:hover {
-        background: url('../img/balloon_smiling@2x.png') no-repeat center top;
-        background-size: 277px 420px;
+        background-size: 96px 150px;
     }
 
     #hotels{
@@ -647,14 +630,6 @@ and (max-device-width : 1024px) {
     #hotels:hover {
     }
     #balloon{
-        width: 609px;
-        height: 940px;
-        background-size: 380px 587px;
-    }
-    #balloon:hover{
-        width: 609px;
-        height: 940px;
-        background-size: 380px 587px;
     }
 }
 
