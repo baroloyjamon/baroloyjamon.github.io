@@ -318,7 +318,7 @@ $orange: #EB8B6E;
     width:99%;
 }
 
-.date
+#date
 {
     left:3%;
 }
@@ -509,6 +509,9 @@ $orange: #EB8B6E;
 
 /*Phones*/
 @media only screen and (orientation:portrait) {
+    #language-switcher-es {
+        left:-50px;
+    }
 }
 
 
