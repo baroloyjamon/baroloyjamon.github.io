@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html><head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55427691-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-55427691-3');
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="./img/balloon_default.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>G&J</title>
+    <meta name="description" content="Giorgia and Jose&#39;s wedding website">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="./wedding_files/normalize.css">
+    <link rel="stylesheet" href="./wedding_files/rsvp.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+
+    <script src="./wedding_files/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <script src="./wedding_files/plugins.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="./wedding_files/form-submission-handler.js"></script>
+    <style>
+    /*Preload of images to avoid blinking when hovering over the images*/
+    /*TO DO: This can be improved using sprites to reduce HTML requests*/
+    :root:before {
+    content:
+    url('./img/ribbon.png')
+    display:none;
+    }
+    </style>
+    </head>
+    <body data-gr-c-s-loaded="true" style="">
+    <div id="language-switcher-es" class="cloud cloud-1"><a href="http://baroloyjamon.com/es/rsvp.html" title="Spanish">Español</a></div>
+    <div id="language-switcher-it" class="cloud cloud-2"><a href="http://baroloyjamon.com/it/rsvp.html" title="Italian">Italiano</a></div>
+    <header><div id="ribbon"></div></header>
+    <div id="zone-form" class="moment">
+        <h2><strong>RSVP</strong></h2>
+        <form class="gform pure-form pure-form-stacked" id="form_center" method="POST" action="https://script.google.com/macros/s/AKfycbzU2jx5U1GYHN1JdPEAM6xAfV8L321et6wkS-vQ/exec">
+            <div class="form-elements">
+                <fieldset class="pure-group" >
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <label for="Name"><h4>First name:</h4></label>
+                        <input required class="form_center" id="Name" name="Name" onchange="check_injection()" placeholder=""/>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <label for="Name"><h4>Last name:</h4></label>
+                        <input required class="form_center" id="LastName" name="LastName" onchange="check_injection()" placeholder=""/>
+                    </div>
+                </fieldset>
+                <fieldset class="pure-group">
+                    <div class="pure-u-1 pure-u-sm-22-24">
+                        <label for="Email"><h4>Your e-mail address:</h4></label>
+                        <input required class="form_center" id="Email" name="Email" type="Email" value=""
+                        required placeholder=""/>
+                        <span class="email-invalid" style="display:none">
+                            Must be a valid email address</span>
+                    </div>
+                </fieldset>
+                <fieldset class="pure-checkbox">
+                    <h4>Confirmation</h4>
+                    <label for="Confirmation-Yes" type=radio class="pure-radio clickElement">
+                        <input class="clickElement" id="Confirmation-Yes" type="radio" name="Confirmation" onClick="" value="Yes">
+                            Yep, I'm coming! See you in September!
+                    </label>
+                    <label for="Confirmation-No" type=radio class="pure-radio clickElement">
+                        <input class="clickElement" id="Confirmation-No" type="radio" name="Confirmation" onClick="" value="No" >
+                            No, I cannot make it.
+                        </label>
+                </fieldset>
+                
+                <hr class="line">
+
+              <fieldset class="pure-group" id="guests" style="display:none;">
+                  <div class="pure-u-1 pure-u-sm-22-24">
+                    <label for="Guest"><h4>How many people are attending?</h4></label>
+                    <select  style="margin-top:1em" name="Guest" onchange="showNames(this.value)" class="form_center" id="Guest">
+                        <option name="Guest" value="0" selected hidden>Select here</option>
+                        <option name="Guest" value="1">Just me (1)</option>
+                        <option name="Guest" value="2">Me and a guest (2)</option>
+                        <option name="Guest" value="3">Family (3)</option>
+                        <option name="Guest" value="4">Family (4)</option>
+                        <option name="Guest" value="5">Family (5)</option>
+                    </select>
+                 </div>
+                </fieldset>
+                <fieldset class="pure-group"  id="nameoneguests" style="display:none;">
+                    <label for="nametwoguests"><h4>Guest 1:</h4></label>
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="First name"/>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Last name"/>
+                    </div>
+                </fieldset>
+                <fieldset class="pure-group" id="nametwoguests" style="display:none;">
+                    <label for="nametwoguests"><h4>Guest 2:</h4></label>
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="First name"/>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Last name"/>
+                    </div>
+                </fieldset>
+                <fieldset class="pure-group" id="namethreeguests" style="display:none;">
+                    <label for="namethreeguests"><h4>Guest 3:</h4></label>
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="First name"/>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Last name"/>
+                    </div>
+                </fieldset>
+                <fieldset class="pure-group" id="namefourguests" style="display:none;">
+                    <label for="namefourguests"><h4>Guest 4:</h4></label>
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="First name"/>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Last name"/>
+                    </div>
+                </fieldset>
+                <fieldset id="namefiveguests" class="pure-group" style="display:none;">
+                    <label for="namefiveguests"><h4>Guest 5:</h4></label>
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="First name"/>
+                    </div>
+                    <div class="pure-u-1 pure-u-sm-11-24">
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Last name"/>
+                    </div>
+                </fieldset>
+                <hr class="line">
+
+                <fieldset class="pure-group" id="diet" style="margin-top:-1em;display:none;">
+                    <div class="pure-u-1 pure-u-sm-22-24">
+                        <label for="pdiet"><h4>Do you have any dietary restrictions?</h4></label>
+                        <input style="margin-top:1em" class="form_center" type="text" id="pdiet" name="pdiet" value="" onchange="check_injection()" placeholder="Please describe here. Vegetarian/vegan, allergies, intolerances, etc"/>
+                    </div>
+                </fieldset>
+                
+                <hr class="line">
+                
+                <fieldset class="pure-group" id="songs" style="margin-top:-1em;display:none;">
+                    <div class="pure-u-1 pure-u-sm-22-24">
+                        <label for="psongs"><h4>Would you like your favorite song to be played during the party?</h4></label>
+                        <input  style="margin-top:1em" class="form_center" type="text" id="psongs" name="psongs" value="" onchange="check_injection()" placeholder="Please write the song titles here!"/>
+                    </div>
+                </fieldset>
+                
+                
+                <hr class="line">
+
+                <fieldset class="pure-checkbox" id="events" style="display:none;">
+                    <h4>Do you want to be part of the following optional events?</h4>
+                    <label for="Dinner" class="pure-checkbox">
+                        <input name="Dinner" id="Dinner" type="checkbox"  value="No" onCLick="check()">
+                            Saturday August 31st: dinner at restaurant Il Ciacolon @ 8 PM.
+                    </label>
+                    <label for="Brunch" class="pure-checkbox">
+                        <input name="Brunch" id="Brunch" type="checkbox"  value="No" onCLick="check()" >
+                            Monday September 2nd: Brunch @ 3 PM [15€]
+                    </label>
+                </fieldset>
+                
+
+                <button class="button-success pure-button button-xlarge" id="button-send"><i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+            </div>
+            <div class="thankyou_message" style="display:none;"><h2 id='message'></h2></div>
+        </form>
+    </div>
+    <script>
+        
+        function hideguests()
+        {
+            document.getElementById('nameoneguests').style.display="none";
+            document.getElementById('nametwoguests').style.display="none";
+            document.getElementById('namethreeguests').style.display="none";
+            document.getElementById('namefourguests').style.display="none";
+            document.getElementById('namefiveguests').style.display="none";
+        }
+    
+        function show()
+        {
+            document.getElementsByClassName('line')[0].style.display="block";
+            document.getElementsByClassName('line')[1].style.display="block";
+            document.getElementsByClassName('line')[2].style.display="block";
+            document.getElementsByClassName('line')[3].style.display="block";
+
+            document.getElementById('guests').style.display="block";
+            document.getElementById('events').style.display="block";
+            document.getElementById('diet').style.display="block";
+            document.getElementById('songs').style.display="block";
+
+            var message = document.getElementById('message');
+            message.innerHTML = 'Thank you for your reply.<br><br>See you on the big day!';
+        }
+    
+        function hide()
+        {
+            hideguests();
+            document.getElementsByClassName('line')[0].style.display="none";
+            document.getElementsByClassName('line')[1].style.display="none";
+            document.getElementsByClassName('line')[2].style.display="none";
+            document.getElementsByClassName('line')[3].style.display="none";
+
+            document.getElementById('guests').style.display="none";
+            document.getElementById('events').style.display="none";
+            document.getElementById('diet').style.display="none";
+            document.getElementById('songs').style.display="none";
+            document.getElementById('none').style.display="none";
+            document.getElementById('songs').style.display="none";
+
+            
+            var message = document.getElementById('message');
+            message.innerHTML = 'Thank you for your reply!<br><br>We will miss you.';
+        }
+    
+        function showNames(value)
+        {
+            console.log(value)
+            switch(value) {
+                case "0":
+                break;
+                case "1":
+                hideguests();
+                break;
+                case "2":
+                hideguests();
+                showoneguests();
+                break;
+                case "3":
+                hideguests();
+                showtwoguests();
+                break;
+                case "4":
+                hideguests();
+                showthreeguests();
+                break;
+                case "5":
+                showfourguests();
+                break;
+                default:
+            }
+        }
+    
+        function showoneguests()
+        {
+            document.getElementById('nameoneguests').style.display="block";
+        }
+        function showtwoguests()
+        {
+            document.getElementById('nameoneguests').style.display="block";
+            document.getElementById('nametwoguests').style.display="block";
+        }
+
+        function showthreeguests()
+        {
+            document.getElementById('nameoneguests').style.display="block";
+            document.getElementById('nametwoguests').style.display="block";
+            document.getElementById('namethreeguests').style.display="block";
+        }
+        function showfourguests()
+        {
+            document.getElementById('nameoneguests').style.display="block";
+            document.getElementById('nametwoguests').style.display="block";
+            document.getElementById('namethreeguests').style.display="block";
+            document.getElementById('namefourguests').style.display="block";
+        }
+
+        function check()
+        {
+            var elm_dinner = document.getElementById('Dinner');
+            var elm_brunch = document.getElementById('Brunch');
+            
+            if (elm_dinner.checked) {
+                elm_dinner.value="Yes";
+            }
+            else{
+                elm_dinner.value="No";
+            }
+            if (elm_brunch.checked) {
+                elm_brunch.value="Yes";
+            }
+            else{
+                elm_brunch.value="No";
+            }
+        }
+    
+        /*Trying to fix iPad radio button issue*/
+        $('#Confirmation-No').bind('touchstart click', function(e) {
+        console.log('binding');
+        e.stopPropagation(); //stops propagation
+        hide();
+        });
+        $('#Confirmation-Yes').bind('touchstart click', function(e) {
+        e.stopPropagation(); //stops propagation
+        show();
+        });
+        
+        function check_injection()
+        {
+            document.getElementById("Name").value = document.getElementById("Name").value.replace(/\=/g,"");
+            document.getElementById("Name").value = document.getElementById("Name").value.replace(/\-/g,"");
+            document.getElementById("Name").value = document.getElementById("Name").value.replace(/\+/g,"");
+            document.getElementById("Name").value = document.getElementById("Name").value.replace(/\@/g,"");
+            
+            document.getElementById("LastName").value = document.getElementById("LastName").value.replace(/\=/g,"");
+            document.getElementById("LastName").value = document.getElementById("LastName").value.replace(/\-/g,"");
+            document.getElementById("LastName").value = document.getElementById("LastName").value.replace(/\+/g,"");
+            document.getElementById("LastName").value = document.getElementById("LastName").value.replace(/\@/g,"");
+            
+            document.getElementById("pdiet").value = document.getElementById("pdiet").value.replace(/\=/g,"");
+            document.getElementById("pdiet").value = document.getElementById("pdiet").value.replace(/\-/g,"");
+            document.getElementById("pdiet").value = document.getElementById("pdiet").value.replace(/\+/g,"");
+            document.getElementById("pdiet").value = document.getElementById("pdiet").value.replace(/\@/g,"");
+        }
+    </script>
+</body></html>
