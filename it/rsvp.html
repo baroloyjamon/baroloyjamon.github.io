@@ -12,30 +12,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>G&J</title>
-    <meta name="description" content="Giorgia and Jose&#39;s wedding website">
+        <meta name="description" content="Giorgia and Jose&#39;">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
-    <link rel="stylesheet" href="./wedding_files/normalize.css">
-    <link rel="stylesheet" href="./wedding_files/rsvp.css">
+    <link rel="stylesheet" href="../wedding_files/normalize.css">
+    <link rel="stylesheet" href="../wedding_files/rsvp.css">
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 
     <script src="./wedding_files/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="./wedding_files/plugins.js"></script>
-    <script data-cfasync="false" type="text/javascript" src="./wedding_files/form-submission-handler.js"></script>
+    <script src="../wedding_files/plugins.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="../wedding_files/form-submission-handler.js"></script>
     <style>
     /*Preload of images to avoid blinking when hovering over the images*/
     /*TO DO: This can be improved using sprites to reduce HTML requests*/
     :root:before {
     content:
-    url('./img/ribbon.png')
+    url('../img/ribbon.png')
     display:none;
     }
     </style>
     </head>
     <body data-gr-c-s-loaded="true" style="">
-    <div id="language-switcher-es" class="cloud cloud-1"><a href="http://baroloyjamon.com/es/boda.htm" title="Spanish">Español</a></div>
-    <div id="language-switcher-it" class="cloud cloud-2"><a href="http://baroloyjamon.com/it/matrimonio.htm" title="Italian">Italiano</a></div>
+    <div id="language-switcher-es" class="cloud cloud-1"><a href="http://baroloyjamon.com/rsvp.html" title="English">English</a></div>
+    <div id="language-switcher-it" class="cloud cloud-2"><a href="http://baroloyjamon.com/it/rsvp.html" title="Italian">Italiano</a></div>
     <header><div id="ribbon"></div></header>
     <div id="zone-form" class="moment">
         <h2><strong>RSVP</strong></h2>
@@ -43,32 +43,32 @@
             <div class="form-elements">
                 <fieldset class="pure-group" >
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <label for="Name"><h4>First name:</h4></label>
+                        <label for="Name"><h4>Nombre:</h4></label>
                         <input required class="form_center" id="Name" name="Name" onchange="check_injection()" placeholder=""/>
                     </div>
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <label for="Name"><h4>Last name:</h4></label>
+                        <label for="Name"><h4>Apellido:</h4></label>
                         <input required class="form_center" id="LastName" name="LastName" onchange="check_injection()" placeholder=""/>
                     </div>
                 </fieldset>
                 <fieldset class="pure-group">
                     <div class="pure-u-1 pure-u-sm-22-24">
-                        <label for="Email"><h4>Your e-mail address:</h4></label>
+                        <label for="Email"><h4>Dirección de e-mail:</h4></label>
                         <input required class="form_center" id="Email" name="Email" type="Email" value=""
                         required placeholder=""/>
                         <span class="email-invalid" style="display:none">
-                            Must be a valid email address</span>
+                            Debe ser una dirección de e-mail valida</span>
                     </div>
                 </fieldset>
                 <fieldset class="pure-checkbox">
-                    <h4>Confirmation</h4>
+                    <h4>Confirmar asistencia:</h4>
                     <label for="Confirmation-Yes" type=radio class="pure-radio clickElement">
                         <input class="clickElement" id="Confirmation-Yes" type="radio" name="Confirmation" onClick="" value="Yes">
-                            Yep, I'm coming! See you in September!
+                            ¡Sí! ¡Nos vemos en septiembre!
                     </label>
                     <label for="Confirmation-No" type=radio class="pure-radio clickElement">
                         <input class="clickElement" id="Confirmation-No" type="radio" name="Confirmation" onClick="" value="No" >
-                            No, I cannot make it.
+                            No podré ir.
                         </label>
                 </fieldset>
                 
@@ -76,68 +76,68 @@
 
               <fieldset class="pure-group" id="guests" style="display:none;">
                   <div class="pure-u-1 pure-u-sm-22-24">
-                    <label for="Guest"><h4>How many people are attending?</h4></label>
+                      <label for="Guest"><h4>¿Cuántos venís?</h4></label>
                     <select  style="margin-top:1em" name="Guest" onchange="showNames(this.value)" class="form_center" id="Guest">
-                        <option name="Guest" value="0" selected hidden>Select here</option>
-                        <option name="Guest" value="1">Just me (1)</option>
-                        <option name="Guest" value="2">Me and a guest (2)</option>
-                        <option name="Guest" value="3">Family (3)</option>
-                        <option name="Guest" value="4">Family (4)</option>
-                        <option name="Guest" value="5">Family (5)</option>
+                        <option name="Guest" value="0" selected hidden>Elige aquí</option>
+                        <option name="Guest" value="1">Yo (1)</option>
+                        <option name="Guest" value="2">Un acompañante y yo (2)</option>
+                        <option name="Guest" value="3">Familia (3)</option>
+                        <option name="Guest" value="4">Familia (4)</option>
+                        <option name="Guest" value="5">Familia (5)</option>
                     </select>
                  </div>
                 </fieldset>
                 <fieldset class="pure-group"  id="nameoneguests" style="display:none;">
-                    <label for="nametwoguests"><h4>Guest 1:</h4></label>
+                    <label for="nametwoguests"><h4>Invitado 1:</h4></label>
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="First name"/>
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Nombre"/>
                     </div>
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Last name"/>
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Apellido"/>
                     </div>
                 </fieldset>
                 <fieldset class="pure-group" id="nametwoguests" style="display:none;">
-                    <label for="nametwoguests"><h4>Guest 2:</h4></label>
+                    <label for="nametwoguests"><h4>Invitado 2:</h4></label>
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="First name"/>
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Nombre"/>
                     </div>
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Last name"/>
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Apellido"/>
                     </div>
                 </fieldset>
                 <fieldset class="pure-group" id="namethreeguests" style="display:none;">
-                    <label for="namethreeguests"><h4>Guest 3:</h4></label>
+                    <label for="namethreeguests"><h4>Invitado 3:</h4></label>
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="First name"/>
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Nombre"/>
                     </div>
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Last name"/>
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Apellido"/>
                     </div>
                 </fieldset>
                 <fieldset class="pure-group" id="namefourguests" style="display:none;">
-                    <label for="namefourguests"><h4>Guest 4:</h4></label>
+                    <label for="namefourguests"><h4>Invitado 4:</h4></label>
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="First name"/>
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Nombre"/>
                     </div>
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Last name"/>
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Apellido"/>
                     </div>
                 </fieldset>
                 <fieldset id="namefiveguests" class="pure-group" style="display:none;">
-                    <label for="namefiveguests"><h4>Guest 5:</h4></label>
+                    <label for="namefiveguests"><h4>Invitado 5:</h4></label>
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="First name"/>
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Nombre"/>
                     </div>
                     <div class="pure-u-1 pure-u-sm-11-24">
-                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Last name"/>
+                        <input class="form_center" type="text" value="" name="Name" onchange="check_injection()" placeholder="Apellido"/>
                     </div>
                 </fieldset>
                 <hr class="line">
 
                 <fieldset class="pure-group" id="diet" style="margin-top:-1em;display:none;">
                     <div class="pure-u-1 pure-u-sm-22-24">
-                        <label for="pdiet"><h4>Do you have any dietary restrictions?</h4></label>
-                        <input style="margin-top:1em" class="form_center" type="text" id="pdiet" name="pdiet" value="" onchange="check_injection()" placeholder="Please describe here. Vegetarian/vegan, allergies, intolerances, etc"/>
+                        <label for="pdiet"><h4>¿Tienes alguna restricción en tu dieta?</h4></label>
+                        <input style="margin-top:1em" class="form_center" type="text" id="pdiet" name="pdiet" value="" onchange="check_injection()" placeholder=" Vegetariano/vegano, alergias, intolerancias, etc"/>
                     </div>
                 </fieldset>
                 
@@ -145,8 +145,8 @@
                 
                 <fieldset class="pure-group" id="songs" style="margin-top:-1em;display:none;">
                     <div class="pure-u-1 pure-u-sm-22-24">
-                        <label for="psongs"><h4>Would you like your favorite song to be played during the party?</h4></label>
-                        <input  style="margin-top:1em" class="form_center" type="text" id="psongs" name="psongs" value="" onchange="check_injection()" placeholder="Please write the song titles here!"/>
+                        <label for="psongs"><h4>¿Quieres que tu canción favorita suene en la fiesta?</h4></label>
+                        <input  style="margin-top:1em" class="form_center" type="text" id="psongs" name="psongs" value="" onchange="check_injection()" placeholder="¡Escribe el título de la canción aquí!"/>
                     </div>
                 </fieldset>
                 
