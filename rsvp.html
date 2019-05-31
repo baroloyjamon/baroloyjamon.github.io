@@ -61,7 +61,8 @@
                     </div>
                 </fieldset>
                 <fieldset class="pure-checkbox">
-                    <h4>Confirmation</h4>
+                    <div class="pure-u-1 pure-u-sm-22-24">
+                    <label for="Confirmation"><h4>Confirmation</h4><label for="Email">
                     <label for="Confirmation-Yes" type=radio class="pure-radio clickElement">
                         <input class="clickElement" id="Confirmation-Yes" type="radio" name="Confirmation" onClick="" value="Yes">
                             Yep, I'm coming! See you in September!
@@ -70,6 +71,7 @@
                         <input class="clickElement" id="Confirmation-No" type="radio" name="Confirmation" onClick="" value="No" >
                             No, I cannot make it.
                         </label>
+                    </div>
                 </fieldset>
                 
                 <hr class="line">
@@ -154,15 +156,23 @@
                 <hr class="line">
 
                 <fieldset class="pure-checkbox" id="events" style="display:none;">
-                    <h4>Do you want to be part of the following optional events?</h4>
+                    <div class="pure-u-1 pure-u-sm-22-24">
+                    <h4>Will you attend any of these optional events?</h4>
                     <label for="Dinner" class="pure-checkbox">
                         <input name="Dinner" id="Dinner" type="checkbox"  value="No" onCLick="check()">
-                            Saturday August 31st: dinner at restaurant Il Ciacolon @ 8 PM.
+                            <div style="margin-left: 25px;margin-top: -1em;">
+                            Dinner at restaurant <a href="https://www.ilciacolon.it/">Il Ciacolon</a> <br>
+                            <i>Saturday August 31<sup>st</i> at 8 PM
+                            </div>
                     </label>
                     <label for="Brunch" class="pure-checkbox">
                         <input name="Brunch" id="Brunch" type="checkbox"  value="No" onCLick="check()" >
-                            Monday September 2nd: Brunch @ 3 PM [15€]
+                            <div style="margin-left: 25px;margin-top: -1em;">
+                            Wine tasting at <a href="https://agricolabrandini.it/it/">Agricola Brandini</a> (price: 15€)<br>
+                            <i>Monday September 2<sup>nd</i> at 3 PM
+                            </div>
                     </label>
+                    </div>
                 </fieldset>
                 
 

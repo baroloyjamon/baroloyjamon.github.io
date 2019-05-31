@@ -10,6 +10,11 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@font-face {
+    font-family: 'Hamilton';
+    src: url('../fonts/Hamilton.ttf') format('truetype');
+}
+
 html,
 button,
 input,
@@ -413,6 +418,7 @@ header {
 .moment h4{
     margin-top:0px;
     margin-bottom:0px;
+    text-align: center;
 }
 
 .moment p strong {
@@ -432,7 +438,7 @@ header {
     line-height: 1em;
     font-weight: 300;
     display: block;
-    color: #F26A47;
+    color: #F26A47; /*#FC7660; */
 }
 
 .moment p.right {
@@ -463,6 +469,15 @@ header {
 #message
 {
     margin-top:220px;
+}
+
+#rsvp{
+    font-family: "Hamilton", serif;
+    position: relative;
+    color: white;
+    font-size:2em;
+    left:35%;
+
 }
 
 .cloud {
