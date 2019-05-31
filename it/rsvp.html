@@ -138,8 +138,8 @@
 
                 <fieldset class="pure-group" id="diet" style="margin-top:-1em;display:none;">
                     <div class="pure-u-1 pure-u-sm-22-24">
-                        <label for="pdiet"><h4>Hai qualche restrizione dietetica?</h4></label>
-                        <input style="margin-top:1em" class="form_center" type="text" id="pdiet" name="pdiet" value="" onchange="check_injection()" placeholder=" Vegetariano/vegano, allergie, intolleranze, ecc."/>
+                        <label for="Diet"><h4>Hai qualche restrizione dietetica?</h4></label>
+                        <input style="margin-top:1em" class="form_center" type="text" id="Diet" name="Diet" value="" onchange="check_injection()" placeholder=" Vegetariano/vegano, allergie, intolleranze, ecc."/>
                     </div>
                 </fieldset>
                 
@@ -147,8 +147,8 @@
                 
                 <fieldset class="pure-group" id="songs" style="margin-top:-1em;display:none;">
                     <div class="pure-u-1 pure-u-sm-22-24">
-                        <label for="psongs"><h4>Quale canzone non può mancare durante la festa?</h4></label>
-                        <input  style="margin-top:1em" class="form_center" type="text" id="psongs" name="psongs" value="" onchange="check_injection()" placeholder="Scrivi qui il titolo"/>
+                        <label for="Songs"><h4>Quale canzone non può mancare durante la festa?</h4></label>
+                        <input  style="margin-top:1em" class="form_center" type="text" id="Songs" name="Songs" value="" onchange="check_injection()" placeholder="Scrivi qui il titolo"/>
                     </div>
                 </fieldset>
                 
@@ -322,10 +322,65 @@
             document.getElementById("LastName").value = document.getElementById("LastName").value.replace(/\+/g,"");
             document.getElementById("LastName").value = document.getElementById("LastName").value.replace(/\@/g,"");
             
-            document.getElementById("pdiet").value = document.getElementById("pdiet").value.replace(/\=/g,"");
-            document.getElementById("pdiet").value = document.getElementById("pdiet").value.replace(/\-/g,"");
-            document.getElementById("pdiet").value = document.getElementById("pdiet").value.replace(/\+/g,"");
-            document.getElementById("pdiet").value = document.getElementById("pdiet").value.replace(/\@/g,"");
+            document.getElementById("GuestName").value = document.getElementById("GuestName").value.replace(/\=/g,"");
+            document.getElementById("GuestName").value = document.getElementById("GuestName").value.replace(/\-/g,"");
+            document.getElementById("GuestName").value = document.getElementById("GuestName").value.replace(/\+/g,"");
+            document.getElementById("GuestName").value = document.getElementById("GuestName").value.replace(/\@/g,"");
+            
+            document.getElementById("GuestLastName").value = document.getElementById("GuestLastName").value.replace(/\=/g,"");
+            document.getElementById("GuestLastName").value = document.getElementById("GuestLastName").value.replace(/\-/g,"");
+            document.getElementById("GuestLastName").value = document.getElementById("GuestLastName").value.replace(/\+/g,"");
+            document.getElementById("GuestLastName").value = document.getElementById("GuestLastName").value.replace(/\@/g,"");
+            
+            document.getElementById("GuestName1").value = document.getElementById("GuestName1").value.replace(/\=/g,"");
+            document.getElementById("GuestName1").value = document.getElementById("GuestName1").value.replace(/\-/g,"");
+            document.getElementById("GuestName1").value = document.getElementById("GuestName1").value.replace(/\+/g,"");
+            document.getElementById("GuestName1").value = document.getElementById("GuestName1").value.replace(/\@/g,"");
+            
+            document.getElementById("GuestLastName1").value = document.getElementById("GuestLastName1").value.replace(/\=/g,"");
+            document.getElementById("GuestLastName1").value = document.getElementById("GuestLastName1").value.replace(/\-/g,"");
+            document.getElementById("GuestLastName1").value = document.getElementById("GuestLastName1").value.replace(/\+/g,"");
+            document.getElementById("GuestLastName1").value = document.getElementById("GuestLastName1").value.replace(/\@/g,"");
+            
+            document.getElementById("GuestName2").value = document.getElementById("GuestName2").value.replace(/\=/g,"");
+            document.getElementById("GuestName2").value = document.getElementById("GuestName2").value.replace(/\-/g,"");
+            document.getElementById("GuestName2").value = document.getElementById("GuestName2").value.replace(/\+/g,"");
+            document.getElementById("GuestName2").value = document.getElementById("GuestName2").value.replace(/\@/g,"");
+            
+            document.getElementById("GuestLastName2").value = document.getElementById("GuestLastName2").value.replace(/\=/g,"");
+            document.getElementById("GuestLastName2").value = document.getElementById("GuestLastName2").value.replace(/\-/g,"");
+            document.getElementById("GuestLastName2").value = document.getElementById("GuestLastName2").value.replace(/\+/g,"");
+            document.getElementById("GuestLastName2").value = document.getElementById("GuestLastName2").value.replace(/\@/g,"");
+            
+            document.getElementById("GuestName3").value = document.getElementById("GuestName3").value.replace(/\=/g,"");
+            document.getElementById("GuestName3").value = document.getElementById("GuestName3").value.replace(/\-/g,"");
+            document.getElementById("GuestName3").value = document.getElementById("GuestName3").value.replace(/\+/g,"");
+            document.getElementById("GuestName3").value = document.getElementById("GuestName3").value.replace(/\@/g,"");
+            
+            document.getElementById("GuestLastName3").value = document.getElementById("GuestLastName3").value.replace(/\=/g,"");
+            document.getElementById("GuestLastName3").value = document.getElementById("GuestLastName3").value.replace(/\-/g,"");
+            document.getElementById("GuestLastName3").value = document.getElementById("GuestLastName3").value.replace(/\+/g,"");
+            document.getElementById("GuestLastName3").value = document.getElementById("GuestLastName3").value.replace(/\@/g,"");
+            
+            document.getElementById("GuestName4").value = document.getElementById("GuestName4").value.replace(/\=/g,"");
+            document.getElementById("GuestName4").value = document.getElementById("GuestName4").value.replace(/\-/g,"");
+            document.getElementById("GuestName4").value = document.getElementById("GuestName4").value.replace(/\+/g,"");
+            document.getElementById("GuestName4").value = document.getElementById("GuestName4").value.replace(/\@/g,"");
+            
+            document.getElementById("GuestLastName4").value = document.getElementById("GuestLastName4").value.replace(/\=/g,"");
+            document.getElementById("GuestLastName4").value = document.getElementById("GuestLastName4").value.replace(/\-/g,"");
+            document.getElementById("GuestLastName4").value = document.getElementById("GuestLastName4").value.replace(/\+/g,"");
+            document.getElementById("GuestLastName4").value = document.getElementById("GuestLastName4").value.replace(/\@/g,"");
+            
+            document.getElementById("Diet").value = document.getElementById("Diet").value.replace(/\=/g,"");
+            document.getElementById("Diet").value = document.getElementById("Diet").value.replace(/\-/g,"");
+            document.getElementById("Diet").value = document.getElementById("Diet").value.replace(/\+/g,"");
+            document.getElementById("Diet").value = document.getElementById("Diet").value.replace(/\@/g,"");
+            
+            document.getElementById("Songs").value = document.getElementById("Songs").value.replace(/\=/g,"");
+            document.getElementById("Songs").value = document.getElementById("Songs").value.replace(/\-/g,"");
+            document.getElementById("Songs").value = document.getElementById("Songs").value.replace(/\+/g,"");
+            document.getElementById("Songs").value = document.getElementById("Songs").value.replace(/\@/g,"");
         }
     </script>
 </body></html>
