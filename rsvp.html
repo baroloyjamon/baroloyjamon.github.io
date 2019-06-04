@@ -62,7 +62,7 @@
                 </fieldset>
                 <fieldset class="pure-checkbox">
                     <div class="pure-u-1 pure-u-sm-22-24">
-                    <label for="Confirmation"><h4>Confirmation</h4><label for="Email">
+                    <label for="Confirmation"><h4>Confirmation</h4></label>
                     <label for="Confirmation-Yes" type=radio class="pure-radio clickElement">
                         <input class="clickElement" id="Confirmation-Yes" type="radio" name="Confirmation" onClick="" value="Yes">
                             Yep, I'm coming! See you in September!
@@ -133,19 +133,30 @@
                         <input style="margin-top:1em" class="form_center" type="text" id="Diet" name="Diet" value="" onchange="check_injection()" placeholder="Please describe here. Vegetarian/vegan, allergies, intolerances, etc"/>
                     </div>
                 </fieldset>
-                
-                <hr class="line">
-                
-                <fieldset class="pure-group" id="songs" style="margin-top:-1em;display:none;">
-                    <div class="pure-u-1 pure-u-sm-22-24">
-                        <label for="Songs"><h4>Would you like your favorite song to be played during the party?</h4></label>
-                        <input  style="margin-top:1em" class="form_center" type="text" id="Songs" name="Songs" value="" onchange="check_injection()" placeholder="Please write the song titles here!"/>
-                    </div>
-                </fieldset>
-                
-                
-                <hr class="line">
 
+<!-- GG addition -->
+                <hr class="line">
+                <fieldset class="pure-checkbox" id="shuttles" style="margin-top:-1em; display:none;">
+                    <div class="pure-u-1 pure-u-sm-22-24">
+                        <label for="Shuttle"><h5>On the day of the wedding, there will be shuttles to bring you from <i>Castelnuovo</i> to the church, to the reception venue and then back to <i>Castelnuovo</i>. </h5>
+                            <!-- <h6>Castelnuovo -> Church -> Reception -> Venue -> Castelnuovo</h6> -->
+                            <br>
+                            <h4>Would you like to reserve a seat for you and your guests?</h4>
+                        </label>
+                            <label for="ShuttleYes" type=radio class="pure-radio clickElement">
+                                <input class="clickElement" id="ShuttleYes" type="radio" name="Shuttle" onClick="" value="Yes">
+                                    Yes, please!
+                                    </label>
+                            <label for="ShuttleNo" type=radio class="pure-radio clickElement">
+                                <input class="clickElement" id="ShuttleNo" type="radio" name="Shuttle" onClick="" value="No" >
+                                    No, I will use my own transportation.
+                                    </label>
+                            </div>
+                </fieldset>
+
+<!-- GG addition -->
+                
+                <hr class="line">
                 <fieldset class="pure-checkbox" id="events" style="display:none;">
                     <div class="pure-u-1 pure-u-sm-22-24">
                     <h4>Will you attend any of these optional events?</h4>
@@ -166,7 +177,14 @@
                     </div>
                 </fieldset>
                 
-
+                <hr class="line">
+                <fieldset class="pure-group" id="songs" style="margin-top:-1em;display:none;">
+                    <div class="pure-u-1 pure-u-sm-22-24">
+                        <label for="Songs"><h4>Which song must <i>absolutely</i> be played during our party?</h4></label>
+                        <input  style="margin-top:1em" class="form_center" type="text" id="Songs" name="Songs" value="" onchange="check_injection()" placeholder="Please write the song titles here!"/>
+                    </div>
+                </fieldset>
+                
                 <button class="button-success pure-button button-xlarge" id="button-send"><i class="fa fa-paper-plane"></i>&nbsp;Send</button>
             </div>
             <div class="thankyou_message" style="display:none;"><h2 id='message'></h2></div>
@@ -188,11 +206,14 @@
             document.getElementsByClassName('line')[1].style.display="block";
             document.getElementsByClassName('line')[2].style.display="block";
             document.getElementsByClassName('line')[3].style.display="block";
+            document.getElementsByClassName('line')[4].style.display="block";
 
             document.getElementById('guests').style.display="block";
             document.getElementById('events').style.display="block";
             document.getElementById('diet').style.display="block";
             document.getElementById('songs').style.display="block";
+            document.getElementById('shuttles').style.display="block";
+
 
             var message = document.getElementById('message');
             message.innerHTML = 'Thank you for your reply.<br><br>See you on the big day!';
@@ -205,11 +226,14 @@
             document.getElementsByClassName('line')[1].style.display="none";
             document.getElementsByClassName('line')[2].style.display="none";
             document.getElementsByClassName('line')[3].style.display="none";
+            document.getElementsByClassName('line')[4].style.display="none";
 
             document.getElementById('guests').style.display="none";
             document.getElementById('events').style.display="none";
             document.getElementById('diet').style.display="none";
             document.getElementById('songs').style.display="none";
+            document.getElementById('shuttles').style.display="none";
+
             
             var message = document.getElementById('message');
             message.innerHTML = 'Thank you for your reply!<br><br>We will miss you.';
@@ -284,6 +308,7 @@
             else{
                 elm_brunch.value="No";
             }
+
         }
     
         /*Trying to fix iPad radio button issue*/

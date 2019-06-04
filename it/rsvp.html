@@ -134,6 +134,28 @@
                     </div>
                 </fieldset>
                 
+                <!-- GG addition -->
+                <hr class="line">
+                <fieldset class="pure-checkbox" id="shuttles" style="margin-top:-1em; display:none;">
+                    <div class="pure-u-1 pure-u-sm-22-24">
+                        <label for="Shuttle"><h5>Metteremo a vostra disposizione delle navette che vi porteranno da <i>Castelnuovo</i> alla Chiesa, alla Tenuta Tamburnin per il ricevimento e, alla fine della serata, di nuovo a <i>Castelnuovo</i>. </h5>
+                            <!-- <h6>Castelnuovo -> Church -> Reception -> Venue -> Castelnuovo</h6> -->
+                            <br>
+                            <h4>Vuoi usufruire del servizio navetta?</h4>
+                        </label>
+                        <label for="ShuttleYes" type=radio class="pure-radio clickElement">
+                            <input class="clickElement" id="ShuttleYes" type="radio" name="Shuttle" onClick="" value="Yes">
+                                Sì, tienimi un posto!
+                                </label>
+                        <label for="ShuttleNo" type=radio class="pure-radio clickElement">
+                            <input class="clickElement" id="ShuttleNo" type="radio" name="Shuttle" onClick="" value="No" >
+                                No, userò la mia macchina.
+                                </label>
+                    </div>
+                </fieldset>
+                
+                <!-- GG addition -->
+                
                 <hr class="line">
                 
                 <fieldset class="pure-group" id="songs" style="margin-top:-1em;display:none;">
@@ -142,30 +164,6 @@
                         <input  style="margin-top:1em" class="form_center" type="text" id="Songs" name="Songs" value="" onchange="check_injection()" placeholder="Scrivi qui il titolo"/>
                     </div>
                 </fieldset>
-                
-                
-                <hr class="line">
-
-                <fieldset class="pure-checkbox" id="events" style="display:none;">
-                    <div class="pure-u-1 pure-u-sm-22-24">
-                    <h4>Parteciperai a qualcuno di questi eventi opzionali?</h4>
-                    <label for="Dinner" class="pure-checkbox">
-                        <input name="Dinner" id="Dinner" type="checkbox"  value="No" onCLick="check()">
-                            <div style="margin-left: 25px;margin-top: -1em;">
-                                Cena presso il ristorante <a href="https://www.ilciacolon.it">Il Ciacolon</a> <br>
-                                <i>Sabato 31 agosto alle 20:00</i>
-                            </div>
-                    </label>
-                    <label for="Brunch" class="pure-checkbox">
-                        <input name="Brunch" id="Brunch" type="checkbox"  value="No" onCLick="check()" >
-                            <div style="margin-left: 25px;margin-top: -1em;">
-                                Degustazione di vini presso l'<a href="https://agricolabrandini.it/it/">Agricola Brandini</a> (costo: 15€) <br>
-                                <i>Lunedì 2 settembre alle 15:00</i>
-                            </div>
-                    </label>
-                    </div>
-                </fieldset>
-                
 
                 <button class="button-success pure-button button-xlarge" id="button-send"><i class="fa fa-paper-plane"></i>&nbsp;Invia</button>
             </div>
@@ -190,9 +188,9 @@
             document.getElementsByClassName('line')[3].style.display="block";
 
             document.getElementById('guests').style.display="block";
-            document.getElementById('events').style.display="block";
             document.getElementById('diet').style.display="block";
             document.getElementById('songs').style.display="block";
+            document.getElementById('shuttles').style.display="block";
 
             var message = document.getElementById('message');
             message.innerHTML = 'Grazie per aver risposto.<br><br>Ci vediamo il gran giorno!';
@@ -207,10 +205,10 @@
             document.getElementsByClassName('line')[3].style.display="none";
 
             document.getElementById('guests').style.display="none";
-            document.getElementById('events').style.display="none";
             document.getElementById('diet').style.display="none";
             document.getElementById('songs').style.display="none";
-            
+            document.getElementById('shuttles').style.display="none";
+
             var message = document.getElementById('message');
             message.innerHTML = 'Grazie per aver risposto.<br><br>Ci mancherai.';
         }
@@ -265,25 +263,6 @@
             document.getElementById('nametwoguests').style.display="block";
             document.getElementById('namethreeguests').style.display="block";
             document.getElementById('namefourguests').style.display="block";
-        }
-
-        function check()
-        {
-            var elm_dinner = document.getElementById('Dinner');
-            var elm_brunch = document.getElementById('Brunch');
-            
-            if (elm_dinner.checked) {
-                elm_dinner.value="Yes";
-            }
-            else{
-                elm_dinner.value="No";
-            }
-            if (elm_brunch.checked) {
-                elm_brunch.value="Yes";
-            }
-            else{
-                elm_brunch.value="No";
-            }
         }
     
         /*Trying to fix iPad radio button issue*/

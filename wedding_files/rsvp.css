@@ -284,15 +284,8 @@ html, body {
     min-width: 1024px;
     overflow-x: hidden;
     overflow-y: visible;
-}
-
-body {
-    
     background:  rgb(1, 33, 72); /* Old browsers */
 
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-
- filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgb(116, 193, 254)', endColorstr='rgb(1, 37, 82)',GradientType=0 ); /* IE6-8 */
 }
 
 #language-switcher-it {
@@ -410,6 +403,13 @@ header {
     margin-top:0px;
     margin-bottom:0px;
     text-align: center;
+}
+
+/*GG addition */
+.moment h5{
+    text-align: center;
+    font-size: 1em;
+    font-weight: normal;
 }
 
 .moment p strong {
@@ -727,6 +727,9 @@ header {
     background-color: white;
     display:none;
     width:92%;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+
 }
 #zone-form{
     margin-top:4em;
@@ -788,22 +791,35 @@ header {
     #language-switcher-it {
         margin-left: 2%;
     }
-    .moment.last
+    .moment
     {
         margin-bottom: 30em;
+        width:120%;
     }
-    .moment p.left
-    {
-        position:relative;
-        width:40%;
+    
+    .moment h2 strong {
+        left: 38%;
+        font-size: 1.7em;
     }
-    .moment p.right {
-        width:40%;
-        left: 0%;
+    
+    .moment h5 {
+        font-size: 1.3em;
     }
 
+    h4 {
+        font-size: 1.4em;
+        margin: 1.33em 0;
+    }
+    
     #zone-form{
-        height:auto;
+        height:30em;
+        width:60%;
+        left:13.2%;
+    }
+    
+    .line
+    {
+        width:100%;
     }
 }
 
