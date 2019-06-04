@@ -338,6 +338,15 @@ html, body {
     position: relative;
 }
 
+.pure-u-1.pure-u-sm-12-24{
+    margin-right:-2px;
+    margin-left:-1px;
+}
+
+.pure-radio{
+    font-size:1em;
+}
+
 header {
     top: 110px;
     position: relative;
@@ -372,7 +381,6 @@ header {
 
 .moment {
     position: relative;
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
     font-size: 1.4em;
@@ -767,7 +775,15 @@ header {
     .moment
     {
         margin-bottom: 30em;
-        width:120%;
+    }
+    
+    .pure-radio{
+        font-size:1.2em;
+    }
+    
+    .pure-checkbox
+    {
+        font-size:1.2em;
     }
     
     .moment h2 strong {
