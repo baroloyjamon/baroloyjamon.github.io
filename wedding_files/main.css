@@ -808,6 +808,13 @@ header {
     height:29em;
     position:relative;
 }
+
+#zone-list
+{
+    height:20em;
+    position:relative;
+}
+
 #zone-eventi i{
     padding-left:0.5em;
 }
