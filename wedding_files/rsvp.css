@@ -373,8 +373,8 @@ header {
 .moment {
     position: relative;
     width: 90%;
-    margin-left: 6.8%;
-    margin-right: -5%;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 1.4em;
 }
 
@@ -424,29 +424,13 @@ header {
 }
 
 .moment h2 strong {
-    left:38.5%;
+    text-align: center;
+    
     font-size: 1.4em;
     line-height: 1em;
     font-weight: 300;
     display: block;
     color: #F26A47; /*#FC7660; */
-}
-
-.moment p.right {
-    position: relative;
-    left: 72%;
-}
-
-.moment.first {
-    margin-top: 250px;
-}
-
-.moment.last {
-    position: relative;
-    margin-left: 5%;
-    font-size: 1.1em;
-    z-index:99;
-    width:30%;
 }
 
 .moment.last strong{
@@ -461,7 +445,6 @@ header {
 {
     margin-top:220px;
     height:15em;
-    left:16%;
 }
 
 #rsvp{
@@ -469,8 +452,6 @@ header {
     position: relative;
     color: white;
     font-size:2em;
-    left:35%;
-
 }
 
 .cloud {
@@ -495,10 +476,12 @@ header {
 
 #button-send {
     margin-top:2em;
-    left:39.5%;
     text-align:center;
     background-color: #71C0BE;
     color:white;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 
@@ -738,7 +721,6 @@ header {
     height:auto;
     position:relative;
     width:50%;
-    left:20%;
 }
 
 /*Retina*/
@@ -770,18 +752,6 @@ header {
     }
 }
 
-/* iPads (portrait) ----------- */
-@media only screen and (orientation:portrait) {
-    .moment p.left
-    {
-        width:40%;
-    }
-    .moment p.right {
-        width:40%;
-        left: 0%;
-    }
-}
-
 /*Phones*/
 @media only screen and (orientation:portrait) {
     
@@ -798,7 +768,6 @@ header {
     }
     
     .moment h2 strong {
-        left: 38%;
         font-size: 1.7em;
     }
     
@@ -814,7 +783,6 @@ header {
     #zone-form{
         height:30em;
         width:60%;
-        left:13.2%;
     }
     
     .line
