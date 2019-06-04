@@ -476,13 +476,15 @@ header {
 }
 
 #button-send {
-    margin-top:2em;
     text-align:center;
     background-color: #71C0BE;
-    color:white;
+    color: white;
+
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 10em;
     margin-left: auto;
     margin-right: auto;
-    display: block;
 }
 
 
